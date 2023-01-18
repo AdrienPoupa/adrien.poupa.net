@@ -1,0 +1,139 @@
+baseURL: https://adrien.poupa.net/
+languageCode: en-us
+title: Adrien Poupa
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+# googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  # minifyOutput: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Posts
+          url: posts
+          weight: 5
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 10
+        - name: Resume
+          url: https://resume.adrien.poupa.net/
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+  author: Adrien Poupa
+
+  defaultTheme: auto
+  # disableThemeToggle: true
+  ShowShareButtons: false
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowToc: true
+  comments: true
+  images: ["papermod-cover.png"]
+
+  homeInfoParams:
+    Title: "Tech Blog by Adrien Poupa"
+    imageUrl: https://avatars0.githubusercontent.com/u/15086425
+    Content: >
+      I am a passionate full-stack developer based in Montreal, Canada. Nowadays, my focus is on PHP applications based on Laravel and Vue.js, but I am also interested in DevOps, the AWS platform, and the cloud in general. I also do Android development from time to time.
+      <br /><br />
+      Open-source software is really important for me, so I try to give back to the community as much as I can by creating new packages, sharing the knowledge I have on my blog, submitting pull requests or reporting bugs.
+      <br /><br />
+      On this blog, I mostly write about my projects, or my shiny discoveries 🙂
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/AdrienPoupa"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/adrienpoupa/"
+    - name: cv
+      url: "https://resume.adrien.poupa.net/"
+
+
+  editPost:
+    URL: "https://github.com/AdrienPoupa/adrien.poupa.net/tree/main/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  assets:
+    disableHLJS: true
+    favicon: "/favicon.ico"
+    favicon16x16:  "/favicon-16x16.png"
+    favicon32x32:  "/favicon-32x32.png"
+    apple_touch_icon:  "/apple-touch-icon.png"
+
+  giscus:
+    repo: "AdrienPoupa/adrien.poupa.net"
+    repoID: "R_kgDOIy9Y_w"
+    category: "Comments"
+    categoryID: "DIC_kwDOIy9Y_84CTqG9"
+    mapping: "pathname"
+    reactionsEnabled: "1"
+    emitMetadata: "0"
+    inputPosition: "bottom"
+    theme: "preferred_color_scheme"
+    lang: "en"
+    loading: "lazy"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    highlight:
+      noClasses: false
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+
+  instagram:
+    disabled: false
+    simple: true
+
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true

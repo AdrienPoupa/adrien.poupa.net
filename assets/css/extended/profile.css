@@ -1,0 +1,9 @@
+.main .profile {
+    align-items: center;
+    min-height: unset;
+    text-align: justify;
+}
+
+.main .profile .bio {
+    padding: 20px;
+}
