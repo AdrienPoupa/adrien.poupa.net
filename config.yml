@@ -46,7 +46,7 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+  description: "Adrien Poupa - Full-Stack Developer"
   author: Adrien Poupa
 
   defaultTheme: auto
@@ -61,7 +61,7 @@ params:
   ShowRssButtonInSectionTermList: true
   ShowToc: true
   comments: true
-  images: ["papermod-cover.png"]
+  # images: ["papermod-cover.png"]
 
   homeInfoParams:
     Title: "Tech Blog by Adrien Poupa"
