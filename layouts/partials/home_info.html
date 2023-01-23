@@ -4,12 +4,14 @@
         <h1>{{ .Title | markdownify }}</h1>
     </header>
     <div class="entry-content profile">
-        {{- if .imageUrl -}}
         <div class="profile-left">
-            <img draggable="false" src="{{ .imageUrl }}" alt="profile image" title="" width="150" height="150">
+            <picture>
+                <source srcset="profile.webp" type="image/webp">
+                <source srcset="profile.jpg" type="image/jpeg">
+                <img draggable="false" src="profile.jpg" alt="{{ site.Params.author }}" title="{{ site.Params.author }}" width="150" height="150">
+            </picture>
             {{ partial "social_icons.html" site.Params.socialIcons }}
         </div>
-        {{- end }}
         <div class="profile-right">{{ .Content | markdownify }}</div>
     </div>
 </article>
