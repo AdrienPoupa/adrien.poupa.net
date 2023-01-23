@@ -1,9 +1,23 @@
 .main .profile {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     min-height: unset;
+}
+
+.profile-left {
+    padding: 10px;
+    flex: 30%;
+}
+
+.profile-right {
+    padding: 10px;
+    flex: 70%;
     text-align: justify;
 }
 
-.main .profile .bio {
-    padding: 20px;
+@media (max-width: 768px) {
+    .main .profile {
+        flex-direction: column;
+    }
 }
