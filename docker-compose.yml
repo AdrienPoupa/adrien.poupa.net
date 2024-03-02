@@ -1,0 +1,8 @@
+services:
+  hugo:
+    image: hugomods/hugo:0.123.7
+    volumes:
+      - ./:/src
+    command: "hugo server --bind 0.0.0.0"
+    ports:
+      - "1313:1313"
