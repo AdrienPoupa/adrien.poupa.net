@@ -10,7 +10,7 @@
                 <source srcset="profile.jpg" type="image/jpeg">
                 <img draggable="false" src="profile.jpg" alt="{{ site.Params.author }}" title="{{ site.Params.author }}" width="150" height="150">
             </picture>
-            {{ partial "social_icons.html" site.Params.socialIcons }}
+            {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
         </div>
         <div class="profile-right">{{ .Content | markdownify }}</div>
     </div>
