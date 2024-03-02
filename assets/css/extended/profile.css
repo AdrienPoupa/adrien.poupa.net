@@ -7,7 +7,6 @@
 
 .profile-left {
     padding: 10px;
-    flex: 30%;
 }
 
 .profile-right {
@@ -23,5 +22,9 @@
 }
 
 .footer span:nth-child(2) {
+    display: none;
+}
+
+ul.lang-switch {
     display: none;
 }
