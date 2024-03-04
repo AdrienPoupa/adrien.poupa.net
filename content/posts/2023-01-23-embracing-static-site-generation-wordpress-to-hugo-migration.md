@@ -29,7 +29,7 @@ There is no shortage of static site generators these days.
 After reviewing the [different options here](https://jamstack.org/generators/), I reduced my selection to Jekyll, Hugo and Zola.
 
 They are all great, really. Jekyll was the precursor of this whole static website trend, it still works great,
-and I am using it for my [resume](https://resume.adrien.poupa.net/). However, it feels a bit dated and can be slow to 
+and I am using it for my [resume](https://adrien.poupa.net/resume). However, it feels a bit dated and can be slow to 
 compile bigger sites, not that it matters for mine.
 
 Zola is a no-frill generator that consists of a single binary, built in Rust. How cool is that? However, development seems
