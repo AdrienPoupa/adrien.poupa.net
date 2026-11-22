@@ -1,5 +1,5 @@
 baseURL: https://adrien.poupa.net/
-languageCode: en-us
+locale: en-US
 title: Adrien Poupa
 theme: PaperMod
 
@@ -18,7 +18,7 @@ minify:
 
 languages:
   en:
-    languageName: "English"
+    label: "English"
     weight: 1
     taxonomies:
       category: categories
