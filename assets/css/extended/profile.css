@@ -21,6 +21,16 @@
     }
 }
 
+/* PaperMod master prints a " · " text node after the copyright. With the
+   "Powered by" span hidden below, that separator is left dangling. */
+.footer {
+    font-size: 0;
+}
+
+.footer span {
+    font-size: 12px;
+}
+
 .footer span:nth-child(2) {
     display: none;
 }
